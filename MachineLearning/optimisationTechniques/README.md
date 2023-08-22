@@ -31,3 +31,6 @@ If you have a good initial guess, second-order methods are more likely to conver
 While second-order methods can offer superior convergence properties, their computational requirements often make them impractical for very large-scale problems or deep learning models. In these cases, variations of first-order methods, like momentum, RMSprop, Adam, etc., are often used because they offer a good trade-off between convergence speed and computational efficiency.
 
 In summary, the right optimization technique depends on the problem size, the nature of the function, computational constraints, and sometimes even empirical trial and error.
+
+In the code attached, we will try to validate the above hypothesis or theoretical point we obtained from the literature.
+We will try to find the optimal value for the minimum value of Rosenbrock, Rastrigin, Himmelblau and Eggholder functions.
