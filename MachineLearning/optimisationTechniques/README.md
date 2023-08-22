@@ -2,7 +2,7 @@ Gradient descent and second-order derivative methods are optimization techniques
 
 **1. Vanilla Gradient Descent:**
 - **Basic Principle:** Adjust the weights (or parameters) in the opposite direction of the gradient of the loss function with respect to the weights.
-- **Update Rule:** \( w = w - \alpha \nabla J(w) \) where \( \alpha \) is the learning rate and \( \nabla J(w) \) is the gradient.
+- **Update Rule:** w=w−α∇J(w) where α is the learning rate and ∇J(w) is the gradient.
 - **Pros:**
   - Simplicity: The method is straightforward and easy to implement.
   - Scalability: Works well for large-scale datasets and high-dimensional problems.
@@ -13,7 +13,7 @@ Gradient descent and second-order derivative methods are optimization techniques
 
 **2. Second-Order Derivative Methods (e.g., Newton's method):**
 - **Basic Principle:** Use both the first and second derivatives to update the weights. 
-- **Update Rule:** \( w = w - [\nabla^2 J(w)]^{-1} \nabla J(w) \) where \( \nabla^2 J(w) \) is the Hessian (second-order derivative matrix).
+- **Update Rule:** w=w−[∇^(2)J(w)] ^(−1) ∇J(w) where ∇^(2)J(w) is the Hessian (second-order derivative matrix).
 - **Pros:**
   - Faster convergence for certain functions: Especially for quadratic or near-quadratic functions.
   - Doesn't require setting a learning rate in its pure form (though it's often combined with line search or trust region methods).
