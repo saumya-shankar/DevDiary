@@ -20,8 +20,8 @@ COPY ./requirements.txt .
 # Installing Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copying the rest of the code into the container
+# Copying the rest of the code and model into the container
 COPY . .
 
 # Running Flask API on the container start
-CMD [ "python", "app.py" ]
+CMD [ "python", "inference.py" ]
